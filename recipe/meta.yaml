@@ -19,13 +19,13 @@ requirements:
     - sphinxcontrib-napoleon >=0.7.0
   host:
     - pip
-    - python >=3.5
+    - python
     - setuptools_scm
   run:
+    - python
     - typing_extensions >=3.7.4  # [py<38]
     - typing_inspect >=0.3.1  # [py<38]
     - docutils >=0.10
-    - python >=3.5
     - sphinxcontrib-napoleon >=0.7.0
     - colorama  # [win32]
 
