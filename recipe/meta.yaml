@@ -11,7 +11,6 @@ source:
 
 build:
   number: 1
-  noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -23,12 +22,12 @@ requirements:
     - python >=3.5
     - setuptools_scm
   run:
-    - typing_extensions >=3.7.4 # [py<38]
-    - typing_inspect >=0.3.1 # [py<38]
+    - typing_extensions >=3.7.4  # [py<38]
+    - typing_inspect >=0.3.1  # [py<38]
     - docutils >=0.10
     - python >=3.5,<=3.8
     - sphinxcontrib-napoleon >=0.7.0
-    - colorama # [win32]
+    - colorama  # [win32]
 
 test:
   imports:
