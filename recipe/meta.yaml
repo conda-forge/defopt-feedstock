@@ -1,5 +1,5 @@
 {% set name = "defopt" %}
-{% set version = "6.0.1" %}
+{% set version = "6.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/defopt-{{ version }}.tar.gz
-  sha256: 91b18eb84d7ff20b3211dfe1bcf0445346d90ec04e4c224af2441f79680b638e
+  sha256: e2573d063627d135e5a6773407b7e4525fdd10618a62d8ba1458616172718c38
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
