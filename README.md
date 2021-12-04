@@ -116,5 +116,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@ickc](https://github.com/ickc/)
 * [@nh13](https://github.com/nh13/)
 

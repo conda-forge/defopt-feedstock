@@ -1,5 +1,6 @@
 {% set name = "defopt" %}
-{% set version = "6.1.0" %}
+{% set version = "6.2.0" %}
+
 
 package:
   name: {{ name|lower }}
@@ -7,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/defopt-{{ version }}.tar.gz
-  sha256: cfe6ecfb54b1368a5cc45d9d58fb3c125e4b4b789e08fd29b5722404b57e137d
+  sha256: 5066028530359f7df8784aedcbdeab9df7cbdd4bbd893f3e14c7c78d7f18bf6a
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -18,14 +19,13 @@ requirements:
   host:
     - pip
     - python >=3.5
-    - setuptools_scm
+    - setuptools-scm >=3.3
   run:
     - python >=3.5
-    - typing_extensions >=3.7.4
-    - typing_inspect >=0.3.1
-    - docutils >=0.10
+    - typing_inspect >=0.5.0
+    - docutils >=0.12
     - sphinxcontrib-napoleon >=0.7.0
-    - colorama
+    - colorama >=0.3.4
 
 test:
   imports:
@@ -43,4 +43,5 @@ about:
 
 extra:
   recipe-maintainers:
+    - ickc
     - nh13
