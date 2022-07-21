@@ -28,7 +28,7 @@ requirements:
     - typing_inspect >=0.5.0             # [py<38]
     - pkgutil_resolve_name               # [py<39]
     - typing_extensions >=3.7.4          # [py<39]
-    - colorama >=0.3.4                   # [win]
+    - colorama >=0.3.4
 
 test:
   imports:
