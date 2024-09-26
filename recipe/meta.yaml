@@ -11,20 +11,22 @@ source:
   sha256: 359a56137b4b7dcbc051d2157e6591a09c35c4297cfc00f1ef8dbcd192d19a34
 
 build:
-  number: 0
-  noarch: python
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python
     - setuptools-scm >=3.3
   run:
-    - python >=3.8
-    - typing_inspect >=0.5.0
+    - python
     - docutils >=0.12
     - sphinxcontrib-napoleon >=0.7.0
+    - importlib-metadata  >=1.0          # [py<38]
+    - typing_inspect >=0.5.0             # [py<38]
+    - pkgutil-resolve-name               # [py<39]
+    - typing_extensions >=3.7.4          # [py<39]
     - colorama >=0.3.4
 
 test:
